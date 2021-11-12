@@ -1,0 +1,65 @@
+/* Header Links Hover Effects */
+
+.hover-effect::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 174, 0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.header--container nav ul li a:hover .hover-effect::after {
+    width: 70%;
+    border-radius: 3px;
+}
+
+.hover-effect-2::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+.header--quicklinks ul li a:hover .hover-effect-2::after {
+    width: 70%;
+}
+
+
+/* END */
+
+.card-logo-notloaded {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
+
+.card-logo-loaded {
+    transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -webkit-transition: all 0.7s ease;
+}
+
+
+/* Global Classes */
+
+.scaled1p05 {
+    transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+}
+
+.scaled1p02 {
+    transform: scale(1.01);
+    -moz-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    filter: blur(3px) brightness(.8);
+    -webkit-filter: blur(3px) brightness(.8);
+}
